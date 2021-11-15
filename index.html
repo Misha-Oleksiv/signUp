@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="styles.css">
+	<title>Js core 14</title>
+
+</head>
+
+<body>
+<div class="container">
+	<div class="sign-up">
+		<h2>Please sign up</h2>
+		<form name="signupForm" id="form">
+			<div class="inpt-container">
+				<input type="text" class="input focus" id="givenName" required autocomplete="off">
+				<label class="floating-label">First name</label>
+				<span class="success icon name-success">🗸</span>
+				<span class="error icon name-error">⚠</span>
+				<div class="modal modal-gName">Please enter a valid Given name.</div>
+			</div>
+			<div class="inpt-container">
+				<input type="text" class="input focus" id="familyName" required autocomplete="off">
+				<label>Last name</label>
+				<span class="success icon fName-success">🗸</span>
+				<span class="error icon fName-error">⚠</span>
+				<div class="modal modal-fName">Please enter a valid Family name.</div>
+			</div>
+			<div class="inpt-container">
+				<input type="email" class="input focus" id="email" required autocomplete="off">
+				<label>Email</label>
+				<span class="success icon email-success">🗸</span>
+				<span class="error icon email-error">⚠</span>
+				<div class="modal modal-email">Please enter a valid Email.</div>
+			</div>
+			<div class="inpt-container">
+				<input type="password" class="input focus" id="pass" name="pass" required>
+				<label>Password</label>
+				<span class="success icon pass-success">🗸</span>
+				<span class="error icon pass-error">⚠</span>
+				<div class="modal modal-pass">Please enter a valid Password.</div>
+			</div>
+
+			<div>
+				<label for="check">
+					<input type="checkbox" class="check" id="check"><span class="agree">I agree wuth Privacy Policy.</span>
+				</label>
+			</div>
+			<div class="inpt-container">
+				<input type="button" class="input signUp-btn" value="Sign Up" id="signUpBtn" name="signUp" disabled='disabled'>
+			</div>
+		</form>
+	</div>
+	<div class="account-popUp">
+		<div class="account-popUp-head">
+			<div class="popUp-head-icon">✓</div>
+		</div>
+		<div class="account-popUp-body">
+			<h3 class="body-head">Great!</h3>
+			<p class="popUp-text">Your account has been created successfully.</p>
+			<div class="success-btn">
+				<input type="button" class="btn-exploring" value="Start Exploring ➔"><span></span>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
